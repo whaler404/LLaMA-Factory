@@ -1,0 +1,5 @@
+model_name_or_path: Qwen/Qwen2.5-0.5B-Instruct
+adapter_name_or_path: saves/outputs/meow_girl/qwen2.5_0.5b_dpo/checkpoint-100
+template: qwen
+infer_backend: huggingface  # choices: [huggingface, vllm, sglang]
+trust_remote_code: true

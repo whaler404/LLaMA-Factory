@@ -1,0 +1,132 @@
+{
+  "meow": {
+    "file_name": "meow.json",
+    "formatting": "alpaca"
+  },
+  "fever": {
+    "file_name": "medical_gpt_cleaned/pretrain/fever.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "query": "text"
+    }
+  },
+  "tianlongbabu": {
+    "file_name": "medical_gpt_cleaned/pretrain/tianlongbabu.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "query": "text"
+    }
+  },
+  "en_article_tail500": {
+    "file_name": "medical_gpt_cleaned/pretrain/en_article_tail500.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "query": "text"
+    }
+  },
+  "medical_sft_1K_format_alpaca": {
+    "file_name": "medical_gpt_cleaned/finetune/medical_sft_1K_format.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "history": "history"
+    }
+  },
+  "medical_sft_1K_format": {
+    "file_name": "medical_gpt/finetune/medical_sft_1K_format.jsonl",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    }
+  },
+  "dpo_zh_500_alpaca": {
+    "file_name": "medical_gpt_cleaned/reward/dpo_zh_500_alpaca.jsonl",
+    "formatting": "alpaca",
+    "ranking": true,
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  },
+  "dpo_zh_500_sharegpt": {
+    "file_name": "medical_gpt_cleaned/reward/dpo_zh_500_sharegpt.jsonl",
+    "formatting": "sharegpt",
+    "ranking": true,
+    "columns": {
+      "messages": "conversations",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  },
+  "medical_finetune_zh_train": {
+    "file_name": "medical/finetune/train_zh_0.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "medical_finetune_en_train": {
+    "file_name": "medical/finetune/train_en_1.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "medical_finetune_zh_valid": {
+    "file_name": "medical/finetune/valid_zh_0.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "medical_finetune_en_valid": {
+    "file_name": "medical/finetune/valid_en_1.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "meow_girl": {
+    "file_name": "meow_girl_dpo.json",
+    "ranking": true,
+    "columns": {
+      "prompt": "instruction",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  },
+  "meow_girl_sft": {
+    "file_name": "meow_girl_sft.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "meow_girl_zh_sft": {
+    "file_name": "meow_girl_zh_sft.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "meow_girl_zh_with_system_prompt_sft": {
+    "file_name": "meow_girl_zh_with_system_prompt_sft.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "system": "system"
+    }
+  }
+}

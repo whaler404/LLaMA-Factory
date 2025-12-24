@@ -1,0 +1,5 @@
+model_name_or_path: Qwen/Qwen2.5-0.5B-Instruct
+adapter_name_or_path: saves/outputs/medical_gpt/qwen2.5_sft_medical/checkpoint-12500
+template: qwen
+infer_backend: huggingface  # choices: [huggingface, vllm, sglang]
+trust_remote_code: true

@@ -1,0 +1,19 @@
+### model
+model_name_or_path: Qwen/Qwen2.5-0.5B-Instruct
+adapter_name_or_path: saves/outputs/medical_gpt/qwen2.5_sft_medical/checkpoint-12500
+trust_remote_code: true
+
+### method
+finetuning_type: lora
+
+### dataset
+task: cmmlu_test  # choices: [mmlu_test, ceval_validation, cmmlu_test]
+template: fewshot
+lang: en
+n_shot: 5
+
+### output
+save_dir: saves/outputs/medical_gpt/qwen2.5_eval_sft
+
+### eval
+batch_size: 4
