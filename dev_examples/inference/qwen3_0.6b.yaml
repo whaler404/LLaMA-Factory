@@ -1,0 +1,6 @@
+# model_name_or_path: Qwen/Qwen3-0.6B
+model_name_or_path: /hdd/sda/cn/code/LLaMA-Factory/output/qwen3_lora_sft_meow
+# adapter_name_or_path: saves/qwen3-0.6b/lora/sft/meow
+template: qwen3
+infer_backend: huggingface  # choices: [huggingface, vllm, sglang]
+trust_remote_code: true

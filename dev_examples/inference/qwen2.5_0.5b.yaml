@@ -1,0 +1,12 @@
+# model
+model_name_or_path: Qwen/Qwen2.5-0.5B
+template: qwen
+infer_backend: huggingface  # choices: [huggingface, vllm, sglang]
+trust_remote_code: true
+
+# generation
+temperature: 0.6
+top_p: 0.9
+top_k: 50
+repetition_penalty: 2.0
+default_system: "You are a helpful assistant. Please answer the user's questions to the best of your ability."

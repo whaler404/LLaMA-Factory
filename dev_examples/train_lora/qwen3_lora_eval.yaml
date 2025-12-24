@@ -1,0 +1,19 @@
+### model
+model_name_or_path: Qwen/Qwen3-0.6B
+adapter_name_or_path: saves/qwen3-0.6b/lora/sft/alpaca_en_demo
+trust_remote_code: true
+
+### method
+finetuning_type: lora
+
+### dataset
+task: mmlu_test  # choices: [mmlu_test, ceval_validation, cmmlu_test]
+template: fewshot
+lang: en
+n_shot: 5
+
+### output
+save_dir: saves/qwen3-0.6b/lora/eval/alpaca_en_demo
+
+### eval
+batch_size: 4
